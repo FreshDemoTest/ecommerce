@@ -1,0 +1,26 @@
+import type { ErrorTypesInterface } from "../types";
+
+export const logErrorMap: ErrorTypesInterface = {
+  CART_NO_ASSIGNED_UNIT: "Could not fetch cart, Seller Unit has not setup.",
+  CART_ISSUES_CREATNG_ORDER: "Could not create order.",
+  SELLER_INFO_NOT_AVAILABLE: "Seller business is not available.",
+  SELLER_UNIT_NOT_FOUND: "Seller Unit not found.",
+  USER_INFO_NOT_AVAILABLE: "User info not available.",
+  USER_ISSUES_CREATING_ADDRESS: "Could not create user's address.",
+  USER_ISSUES_SETTING_DEFAULT_ADDRESS: "Could not set default address.",
+  CATALOG_NOT_AVAILABLE: "Catalog not available.",
+  AUTHOS_ERROR_CREATING_SESSION: "Could not create session.",
+  AUTHOS_ERROR_UPDATING_SESSION: "Could not update session.",
+  AUTHOS_ERROR_DECODE_JWT: "Could not decode JWT.",
+  AUTHOS_ERROR_TABLE_NOT_FOUND: "Could not find table.",
+  AUTHOS_ERROR_INVALID_SESSION: "Invalid session.",
+  AUTHOS_ERROR_EMAIL_ALREADY_REGISTERED: "Email already registered.",
+  AUTHOS_ERROR_CREATING_ECOMM_USER: "Could not create Ecomm user.",
+  AUTHOS_ERROR_ELEMENT_NOT_FOUND: "Element not found.",
+  AUTHOS_ERROR_WRONG_PASSWORD: "Wrong password.",
+  AUTHOS_ERROR_CREATING_RESTORE: "Could not create restore.",
+  AUTHOS_ERROR_INVALID_RESTORE: "Invalid restore.",
+  AUTHOS_ERROR_USER_ALREADY_LOGGED: "User already logged.",
+  AUTHOS_ERROR: "Authentication Generic error.",
+  SUPPLIER_PRODUCT_ID_IS_EMPTY: "Supplier Product ID is empty.",
+};
