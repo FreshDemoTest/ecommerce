@@ -20,7 +20,7 @@ RUN npm install -g pnpm
 RUN pnpm install
 
 # Expose the port your app runs on (adjust if necessary)
-EXPOSE 3000
+EXPOSE 10000
 
 # Define the command to run your app with the filter
 CMD ["pnpm", "dev", "--filter", "commerce-template"]
