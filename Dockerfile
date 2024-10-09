@@ -9,6 +9,7 @@ COPY package*.json ./
 COPY pnpm-lock.yaml ./
 COPY pnpm-workspace.yaml ./
 COPY tsconfig.json ./
+COPY turbo.json ./
 
 # Copy the rest of your application code into the container
 COPY . .
@@ -20,7 +21,7 @@ RUN npm install -g pnpm
 RUN pnpm install
 
 # Expose the port your app runs on (adjust if necessary)
-EXPOSE 10000
+EXPOSE 3001
 
 # Define the command to run your app with the filter
-CMD ["pnpm", "dev", "--filter", "commerce-template"]
+CMD ["pnpm", "dev", "--filter", "commerce-template", "--", "-p", "$PORT"]

@@ -144,7 +144,7 @@ export async function getSellerInfo(
     const cloudinaryVersion = generateCloudinaryVersion(); //[TODO] add method to all images from cloudinary
 
     const projectUrl: string =
-      ecommerceParams.ecommerceUrl || "http://localhost:10000";
+      ecommerceParams.ecommerceUrl || "http://localhost:3001";
 
     const cloudinaryEnvPath: string =
       process.env.NEXT_PUBLIC_GQLAPI_ENV === "production"
@@ -241,7 +241,7 @@ export async function getSellerInfo(
       },
       twitter: {
         title: ecommerceParams.sellerName || "Commerce Template",
-        site: ecommerceParams.ecommerceUrl || "http://localhost:10000",
+        site: ecommerceParams.ecommerceUrl || "http://localhost:3001",
       },
       metadataBase: new URL(ecommerceParams.ecommerceUrl),
     };

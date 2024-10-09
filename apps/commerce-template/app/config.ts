@@ -2,7 +2,7 @@ import type { EnvCommerceConfigType } from "core";
 
 const graphQLAPIUrl: string =
   process.env.NEXT_PUBLIC_GQLAPI_ENV === "production"
-    ? "https://gql-standalone.onrender.com/grephql"
+    ? "https://gql-standalone.onrender.com/graphql"
     // : "https://gqlapi.stg.alima.la/graphql";
 :"http://localhost:8004/graphql";
 

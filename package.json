@@ -5,7 +5,8 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "ui:add": "pnpm --filter ui generate:component"
+    "ui:add": "pnpm --filter ui generate:component",
+    "start": "turbo run start -- --port $PORT"
   },
   "devDependencies": {
     "eslint": "^8.48.0",
